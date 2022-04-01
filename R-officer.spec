@@ -4,7 +4,7 @@
 #
 Name     : R-officer
 Version  : 0.4.2
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/officer_0.4.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/officer_0.4.2.tar.gz
 Summary  : Manipulation of Microsoft Word and PowerPoint Documents
@@ -36,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648829917
+export SOURCE_DATE_EPOCH=1648830440
 
 %install
-export SOURCE_DATE_EPOCH=1648829917
+export SOURCE_DATE_EPOCH=1648830440
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
