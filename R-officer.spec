@@ -4,7 +4,7 @@
 #
 Name     : R-officer
 Version  : 0.4.3
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/officer_0.4.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/officer_0.4.3.tar.gz
 Summary  : Manipulation of Microsoft Word and PowerPoint Documents
