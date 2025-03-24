@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : R-officer
-Version  : 0.6.7
-Release  : 27
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/officer_0.6.7.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/officer_0.6.7.tar.gz
+Version  : 0.6.8
+Release  : 28
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/officer_0.6.8.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/officer_0.6.8.tar.gz
 Summary  : Manipulation of Microsoft Word and PowerPoint Documents
 Group    : Development/Tools
 License  : MIT
@@ -57,10 +57,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740096659
+export SOURCE_DATE_EPOCH=1742827600
 
 %install
-export SOURCE_DATE_EPOCH=1740096659
+export SOURCE_DATE_EPOCH=1742827600
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -126,8 +126,11 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/officer/doc_examples/landscape.docx
 /usr/lib64/R/library/officer/doc_examples/ph_dupes.pptx
 /usr/lib64/R/library/officer/doc_examples/text.txt
+/usr/lib64/R/library/officer/examples/example_add_slide.R
 /usr/lib64/R/library/officer/examples/example_layout_rename_ph_labels.R
+/usr/lib64/R/library/officer/examples/example_phs_with.R
 /usr/lib64/R/library/officer/examples/example_plot_layout_properties.R
+/usr/lib64/R/library/officer/examples/example_slide_visible.R
 /usr/lib64/R/library/officer/help/AnIndex
 /usr/lib64/R/library/officer/help/aliases.rds
 /usr/lib64/R/library/officer/help/figures/body_add_doc_1.png
@@ -166,8 +169,10 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/officer/tests/testthat/docs_dir/test-layouts-ordering.pptx
 /usr/lib64/R/library/officer/tests/testthat/docs_dir/test-no-layouts.pptx
 /usr/lib64/R/library/officer/tests/testthat/docs_dir/test-pptx-dedupe-ph.pptx
+/usr/lib64/R/library/officer/tests/testthat/docs_dir/test-slides-visible.pptx
 /usr/lib64/R/library/officer/tests/testthat/docs_dir/test-three-identical-masters.pptx
 /usr/lib64/R/library/officer/tests/testthat/docs_dir/test_empty.pptx
+/usr/lib64/R/library/officer/tests/testthat/setup.R
 /usr/lib64/R/library/officer/tests/testthat/test-alt-text.R
 /usr/lib64/R/library/officer/tests/testthat/test-block_list.R
 /usr/lib64/R/library/officer/tests/testthat/test-defunct.R
@@ -191,7 +196,6 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/officer/tests/testthat/test-images.R
 /usr/lib64/R/library/officer/tests/testthat/test-knitr-utils.R
 /usr/lib64/R/library/officer/tests/testthat/test-missing-tableStyles.R
-/usr/lib64/R/library/officer/tests/testthat/test-ppt-notes.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-add-geom-ln.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-add.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-dedupe-ph-labels.R
@@ -199,6 +203,8 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-matrix.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-misc.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-move.R
+/usr/lib64/R/library/officer/tests/testthat/test-pptx-notes.R
+/usr/lib64/R/library/officer/tests/testthat/test-pptx-ph-location.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-rename-ph-labels.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-selections.R
 /usr/lib64/R/library/officer/tests/testthat/test-pptx-table.R
